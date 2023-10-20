@@ -1,0 +1,27 @@
+{% block content %}
+{% include "header.html" %}
+
+<div id="portfolio" class="container portfolio-container child">
+        <div class="row">
+            <h1 id="new_h1">{{item[0].TITLE}}</h1>
+            <ul class="skill-list">
+            {% for skill in item[0].SKILLS.split(", ") %}
+            <li><a id="skill-btn" href="{{ url_for('skill_list', skill=item['SKILLS']) }}">{{skill}}</a></li>
+            {% endfor %}
+            </ul>
+            <div class="col-lg-6">
+                <div id="first">
+                    <img class="tape" src="/static/tape.png">
+                    <img id="portfolio-image-1" src="{{item[0]['IMAGE LINK 1']}}">
+                </div>
+                <div id="second">
+                    <img class="tape" src="/static/tape.png">
+                    <img id="portfolio-image-2" src="{{item[0]['IMAGE LINK 2']}}">
+                </div>
+            </div>
+            <div id="right-portfolio-col" class="col-lg-6">
+                <p id="my_p">{{item[0].DESCRIPTION}}</p>
+                <a class="btn btn-primary" href={{item.ADDRESS}} target="_blank">{{item[0]["LINK NAME"]}}</a>
+            </div>
+
+{% endblock %}
