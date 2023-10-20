@@ -221,4 +221,8 @@ body > div.container-fluid.parent > div.outer-container.child > div > div > div 
 
     #btn-row {padding-left: 0;}
 
+    .inner-container {padding: 2%}
+
+    .portfolio-container {padding: 2%; height: 100%;}
+
 }
