@@ -11,8 +11,8 @@ html body {
 
 /* FONTS */
 
-#my_h1 {color: rgb(248,246,245); font-family: 'Cormorant Garamond', serif; padding-left: 100px}
-#new_h1, body > div > div > div > h1, #other_h1 {color: rgb(248,246,245); font-family: 'Cormorant Garamond', serif;}
+#my_h1 {color: rgb(248,246,245); font-family: 'Cormorant Garamond', serif; padding-left: 100px; font-size: 5em;}
+#new_h1, body > div > div > div > h1, #other_h1 { color: rgb(248,246,245); font-family: 'Cormorant Garamond', serif;}
 #my_h2, #list-link > h2 {color: rgb(248,246,245); font-family: 'Roboto Serif', sans-serif;}
 #my_h3{color: rgb(248,246,245); font-family: 'Roboto Serif', sans-serif;}
 #my_h4{color: rgb(248,246,245); font-family: 'Roboto Serif', sans-serif;}
@@ -27,7 +27,7 @@ html body {
 }
 
 .summary-container {
-    margin: 5% 0;
+    margin: 10% 0;
     padding: 5%;
     width: 80vw;
     border-radius: 200px 0 0 200px;
@@ -96,7 +96,7 @@ body > div.container-fluid.parent > div.outer-container.child > div > div > div 
 }
 
 .inner-container {
-    padding: 20% 10%;
+    padding: 15% 10%;
     height: 100%;
     width: 80%;
 }
