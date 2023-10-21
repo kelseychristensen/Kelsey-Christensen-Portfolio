@@ -1,1 +1,1 @@
-<a href="https://kelseychristensen.com">LIVE LINK</a>
+<a href="kelseychristensen.com">LIVE LINK</a>
