@@ -6,7 +6,7 @@
             <h1 id="new_h1">{{item[0].TITLE}}</h1>
             <ul class="skill-list">
             {% for skill in item[0].SKILLS.split(", ") %}
-            <li><a id="skill-btn" href="{{ url_for('skill_list', skill=item['skill']) }}">{{skill}}</a></li>
+            <li><a id="skill-btn" href="{{ url_for('skill_list', skill=skill) }}">{{skill}}</a></li>
             {% endfor %}
             </ul>
             <div class="col-lg-6">
