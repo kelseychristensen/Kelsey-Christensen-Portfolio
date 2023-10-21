@@ -42,7 +42,7 @@ def skill_list(skill):
 
 @app.route("/project/<title>")
 def project_item(title):
-    item = [row[1] for row in projects.iterrows() if row[1]["TITLE"] == title]
+    item = [row[1] for row in projects.iterrows() if row[1]["link_address"] == title]
     return render_template('project_item.html', item=item)
 
 
