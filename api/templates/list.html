@@ -7,7 +7,7 @@
                 <div class="row">
                     {% for item in items %}
                     <div class="col-lg-3">
-                        <a id="list-link" href="{{ url_for('project_item', title=item['TITLE']) }}"><img class="list-img" src="{{item['IMAGE LINK 1']}}">
+                        <a id="list-link" href="{{ url_for('project_item', title=item['link_address']) }}"><img class="list-img" src="{{item['IMAGE LINK 1']}}">
                         <h2>{{item['TITLE']}}</h2></a>
                     </div>
                     {% endfor %}
