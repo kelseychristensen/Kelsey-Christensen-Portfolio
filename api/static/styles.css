@@ -1,0 +1,231 @@
+html body {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(80deg, rgb(29,51,51,.95), rgb(29,51,51));
+    scroll-snap-type: y mandatory;
+    }
+
+
+#portfolio {height: 100vh}
+
+/* FONTS */
+
+#my_h1 {color: rgb(248,246,245); font-family: 'Cormorant Garamond', serif; padding-left: 100px; font-size: 5em;}
+#new_h1, body > div > div > div > h1, #other_h1, .skill-highlight { color: rgb(248,246,245); font-family: 'Cormorant Garamond', serif;}
+#my_h2, .skill-highlight-item-name, #list-link > h2 {color: rgb(248,246,245); font-family: 'Roboto Serif', sans-serif; !important;}
+#my_h3{color: rgb(248,246,245); font-family: 'Roboto Serif', sans-serif;}
+#my_h4{color: rgb(248,246,245); font-family: 'Roboto Serif', sans-serif;}
+#my_h5{color: rgb(248,246,245); font-family: 'Roboto Serif', sans-serif;}
+#my_p {color: rgb(248,246,245); font-family: 'Roboto Serif', sans-serif; padding: 10% 0}
+
+#new_p {
+    color: rgb(248,246,245);
+    font-family: 'Roboto Serif', sans-serif;
+    width: 50%;
+    padding-left: 70px;
+}
+
+.summary-container {
+    margin: 10% 0;
+    padding: 5%;
+    width: 80vw;
+    border-radius: 200px 0 0 200px;
+    background-color: rgb(122,133,133, .5);
+    overflow: hidden;
+}
+
+#btn-row {padding-left: 100px;}
+
+
+/* SCROLL BEHAVIOR */
+
+.parent {
+  margin: 0;
+  overflow: scroll;
+  height: 100vh;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+  }
+
+.child {
+  scroll-snap-align: start;
+  position: relative;
+}
+
+/* NAV */
+
+body > nav {height: 9%; background-color: rgb(122,133,133);}
+body > nav > a > i, #oaNavbar > ul > li > a {color: rgb(29,51,51);}
+body > nav > a > i:hover {color: rgb(29,51,51,.5);}
+
+/* BUTTONS */
+
+body > div.container-fluid.parent > div.outer-container.child > div > div > div > div.row > div > a,
+#sendMessageButton,
+#portfolio > div.row > div > div > a,
+#right-portfolio-col > a, #btn-row > div > a{
+    border-style: solid;
+    border-width: 1px;
+    text-decoration: none;
+    background-color: rgb(248,246,245, 0);
+    border-color: rgb(248,246,245);
+    color: rgb(248,246,245);
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+
+body > div.container-fluid.parent > div.outer-container.child > div > div > div > div.row > div > a:hover,
+#sendMessageButton:hover,
+#portfolio > div.row > div > div > a:hover,
+#right-portfolio-col > a:hover, btn btn-primary:hover, #btn-row > div > a:hover
+{
+    background-color: rgb(122,133,133, .5);
+}
+
+/* INDEX */
+
+#small-img {display:none;}
+
+#headshot {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+.outer-container {
+    position: relative;
+    height: 90%;}
+
+.inner-container {
+    padding: 15% 10%;
+    height: 100%;
+    width: 80%;
+}
+
+/* PORTFOLIO */
+
+
+#first {
+    position: relative;
+    transform: rotate(-5deg);
+    top: 0;
+    left: 0;
+    width: 60%;
+}
+
+#second {
+    position: relative;
+    transform: rotate(5deg);
+    bottom: 0;
+    left: 30%;
+    width: 70%;
+}
+
+#portfolio-image-1 {
+    position: relative;
+    top: 15px;
+    width: 100%;
+}
+
+#portfolio-image-2 {
+    position: relative;
+    top: 15px;
+    width: 100%;
+}
+
+.tape {
+    z-index: 10;
+    width: 75px;
+    position: absolute;
+    top: 0;
+    left: 40%;
+}
+
+#portfolio {height: 100%; width: 100%}
+
+.portfolio-container {padding-top: 5%; height: 100%;}
+
+.skill-list li {display: inline;}
+
+#skill-btn {
+    background-color: #387F88;
+    text-decoration: none;
+    color: rgb(248,246,245);
+    padding: 5px;
+    margin-right: 1%;
+    border-radius: 10px;
+    }
+
+#skill-btn:hover {
+    background-color: rgb(248,246,245,.2)
+}
+
+/*LIST PAGE*/
+
+.skill-container {
+    padding: 2%;
+}
+
+#portfolio > div  {padding-bottom: 20px;}
+
+#list-link {
+    opacity: 1;
+    padding-bottom: 2%;
+    text-decoration: none;
+    color: rgb(248,246,245);
+    }
+
+#list-link img {
+    width: 100%;
+}
+
+#list-link:hover {
+    opacity: 0.8;
+}
+
+/* RESPONSIVENESS */
+
+@media (max-width: 1028px)  {
+    html body {
+        text-align: center;
+        height: 100vh;
+        scroll-snap-type: none;
+    }
+
+    #headshot {display: none;}
+    #small-img {display: block; border-radius: 50%;}
+
+    body > div.container-fluid.parent > div.outer-container.child > div > div > div > div.row > div > a,
+    #sendMessageButton,
+    #portfolio > div > div > a {
+        margin-bottom: 10px;
+    }
+
+    .child, .parent {scroll-snap-type: none;}
+
+    .inner-container {margin: 10%}
+
+    .summary-container {
+        border-radius: 0;
+        margin-bottom: 0;
+        padding: 0;
+        width: 100%;
+        background-color: rgb(122,133,133,0)
+    }
+
+    #new_p {
+    padding: 0;
+        width: 100%;
+    }
+
+    #my_h1 {padding-left: 0}
+
+    #btn-row {padding-left: 0;}
+
+    .inner-container {padding: 2%}
+
+    .portfolio-container {padding: 2%; height: 100%;}
+
+}

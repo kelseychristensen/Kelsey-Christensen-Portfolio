@@ -1,0 +1,35 @@
+{% include "header.html" %}
+{% block content %}
+
+<div class="outer-container">
+    <div class="inner-container">
+        <div class="row">
+            <div class="col-lg-8">
+                <img id="small-img" class="img-fluid mx-auto" src="static/img_mob.png">
+                <h1 id="my_h1">Hi, I'm Kelsey.</h1>
+                <div class="summary-container">
+                    <p id="new_p">I’m a Technical Support professional passionate about web design,
+                        full-stack development, and engineering elegant technical solutions.
+                        I’m a voracious learner eager for opportunities that allow me to grow
+                        and explore new skills.</p>
+                </div>
+                <div id="btn-row" class="row">
+                    <div class="col-lg-6">
+                        <a class="btn btn-primary" href="{{ url_for('portfolio') }}">PORTFOLIO</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="btn btn-primary" href="{{ url_for('resume') }}">RESUME</a>
+                    </div>
+                </div>
+            <div class="col-lg-6">
+                        <img id="headshot" src="/static/headshot.png">
+            </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
+{% include "footer.html" %}
