@@ -23,7 +23,7 @@ def portfolio():
     items = [row[1] for row in projects.iterrows()]
     return render_template('portfolio.html', items=items)
 
-@app.route("/contact")
+@app.route("/contact", methods=["GET", "POST"])
 def contact():
     if request.method == "POST":
         data = request.form
